@@ -89,7 +89,7 @@
       "Type": "AWS::Events::Rule",
       "Properties": {
         "Description": "",
-        "ScheduleExpression": "rate(1 day)",
+        "ScheduleExpression": "cron(01 00 * * ? *)",
         "State": "ENABLED",
         "Targets": [
           {
